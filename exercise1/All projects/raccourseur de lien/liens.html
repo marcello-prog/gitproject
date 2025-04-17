@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raccourcisseur d'URL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Raccourcisseur d'URL</h1>
+        <div class="input-group">
+            <input type="text" id="urlInput" placeholder="Entrez votre URL ici..." />
+            <button onclick="shortenURL()">Raccourcir</button>
+        </div>
+        <div id="result" class="result">
+            <p>URL raccourcie :</p>
+            <a id="shortenedURL" target="_blank"></a>
+            <button id="copyButton" onclick="copyToClipboard()">Copier</button>
+        </div>
+        <div id="error" class="error"></div>
+        <div id="loading" class="loading">Chargement...</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

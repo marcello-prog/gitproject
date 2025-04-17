@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: gray;
+flex-direction: column;
+width: 100%;
+}
+section{
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.message{
+  color: #fff;
+  padding: 5px 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+section .calcul{
+  display: flex;
+}
+
+section .calcul h1{
+  color: #fff;
+  font-size: 50px;
+  margin: 0 20px;
+}
+
+
+section h2{
+  color: #fff;
+  margin: 10px 0;
+}
+section input{
+  padding: 10px 0;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+}
+
+
+section input[type="submit"]{
+  padding: 10px 65px;
+  border: 0;
+  background-color: rgb(48, 48, 48);
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: 0.3s ease;
+  margin-top: 20px;
+}
+
+section input[type="submit"]:hover{
+  letter-spacing: 2px;
+}
+section input[type="submit"]:active{
+ opacity: 0.7;
+}
+
+.score{
+font-size: 25px;
+color: #fff;
+text-align: center;
+}
+
+
+ a{
+  margin: 30px 0;
+  color: #fff;
+  text-decoration: 0;
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  border-radius: 7px;
+  /* display: none; */
+ }

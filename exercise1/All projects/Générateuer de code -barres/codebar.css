@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: gray;
+}
+
+section{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  min-width: 30%;
+  border-radius: 10px;
+}
+
+img{
+  width: 50%;
+}
+
+h4{
+text-transform: uppercase;
+letter-spacing: 1px;
+margin-bottom: 20px;
+font-size: 25px;
+}
+
+.search_bar{
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input{
+  width: 75%;
+  padding: 8px;
+  outline: 0;
+  border: 1px solid #999;
+  height: 50px;
+  border-radius:  3px 0 0 3px;
+  font-size: 14px;
+}
+
+button{
+  cursor: pointer;
+  padding: 8px;
+  background-color: gray;
+  color: #fff;
+  border: 1px solid #3f3f3f;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  width: 30%;
+  border-radius: 0 3px 3px 0;
+  font-size: 17px;
+}
+
+button:hover{
+  background-color: rgb(62, 62, 62);
+  cursor: pointer;
+  letter-spacing: 1px;
+  border: 1px solid rgb(24, 24, 24);
+}
+
+#button_code_bar{
+  width: 25%;
+}
+
+
+#box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #999;
+}
+
+#pdf_box{
+  width: 100%;
+}
+#pdf_box button{
+  width: 100%;
+}
+
+.error{
+  text-align: center;
+  font-size: 14px;
+  padding: 8px;
+  width: 100%;
+  background-color: rgb(189,92,92);
+  color: #fff;
+}

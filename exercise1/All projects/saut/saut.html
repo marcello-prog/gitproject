@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Saut</title>
+    <link rel="stylesheet" href="saut.css">
+</head>
+
+<body>
+    <main>
+        <div class="score-vie">
+            <p>Score: <span id="score">0</span></p>
+            <p>Vies: <span id="vie">5</span></p>
+        </div>
+        <div class="jeu">
+            <div class="jeux">
+                <div class="persn">
+                    <img src="img.svg" alt="Personnage">
+                </div>
+                <div class="boule"></div>
+            </div>
+        </div>
+        <div class="commande">
+            <button class="sauter">SAUTER</button>
+            <button class="start">START</button>
+        </div>
+        <div class="message" id="message"></div>
+    </main>
+    <script src="saut.js"></script>
+</body>
+
+</html>

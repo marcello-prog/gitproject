@@ -1,0 +1,139 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222c41;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60%;
+    width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.score-vie {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.jeu {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 80%;
+    height: 70%;
+    overflow: hidden;
+    perspective: 1000px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.jeux {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 95%;
+    border-bottom: 1px solid rgba(11, 11, 243, 0.5);
+    margin-bottom: 20px;
+}
+
+.persn {
+    margin-left: 10px;
+}
+
+.persn img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.5s;
+    transform-origin: center;
+}
+
+.boule {
+    background-color: #000;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.activeDeux {
+    animation: animation_boule 1s infinite linear;
+}
+
+@keyframes animation_boule {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+.activeUn {
+    animation: animation-persn 0.5s ease-in-out;
+}
+
+@keyframes animation-persn {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.commande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.commande button {
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background: #1e3c72;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.commande button:hover {
+    background: #2a5298;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ffcc00;
+    text-align: center;
+}
